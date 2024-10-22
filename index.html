@@ -1,0 +1,192 @@
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>JQuery and plug-ins - Feminine Style</title>
+    <link href="css/plugin.css" rel="stylesheet">
+    <link href="css/jquery-ui.css" rel="stylesheet">
+    <link rel="stylesheet" href="owlcarousel/owl.carousel.css">
+    <link rel="stylesheet" href="owlcarousel/owl.theme.default.css">
+    <link rel="stylesheet" href="css/unite-gallery.css" type="text/css" />
+    <link rel="stylesheet" href="themes/default/ug-theme-default.css" type="text/css" />
+    <link href='themes/video/skin-right-no-thumb.css' rel='stylesheet' type='text/css' />
+    <link href='themes/video/skin-right-thumb.css' rel='stylesheet' type='text/css' />
+    <link href='themes/video/skin-right-title-only.css' rel='stylesheet' type='text/css' />
+    <style>
+        body {
+            background: linear-gradient(to right, #f9c5d1, #fbd3e9); /* Пастельний рожевий фон */
+            font-family: 'Dancing Script', cursive; /* Елегантний шрифт */
+            color: #5b5b5b;
+        }
+
+        h1 {
+            text-align: center;
+            color: #ff69b4; /* Ніжний рожевий колір */
+        }
+
+        .container {
+            margin: 20px auto;
+            width: 90%;
+            max-width: 1200px;
+            background-color: #fff0f5; /* Світлий рожевий блок */
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        #accordion h3 {
+            background-color: #ffe4e1; /* Тонкий рожевий */
+            padding: 10px;
+            border-radius: 8px;
+            color: #ff69b4;
+        }
+
+        .ui-widget-content {
+            border: none;
+        }
+
+        .owl-carousel .item img {
+            border-radius: 10px;
+            border: 2px solid #ffb6c1; /* М'який рожевий бордюр */
+        }
+
+        #gallery img, #gallery-video div {
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        input[type="text"] {
+            border: 2px solid #ff69b4;
+            border-radius: 8px;
+            padding: 5px;
+        }
+
+        /* Стилі для кнопок, якщо потрібно */
+        .ui-button {
+            background-color: #ff69b4;
+            color: white;
+            border-radius: 10px;
+            padding: 8px 12px;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Datepicker</h1>
+        <p>Date: <input type="text" id="datepicker"></p>
+
+        <h1>Unite Gallery - Videos</h1>
+
+            <div id="gallery-video">
+                <div data-type="youtube" data-videoid="M0qJGmocRTs" data-title="Квіти" data-description="Чарівні весняні квіти."></div>
+                <div data-type="youtube" data-videoid="ElNpEzjWLJM" data-title="Квіти" data-description="Найкрасивіші квіти."></div>
+                <div data-type="youtube" data-videoid="aP0dhq7dfUA" data-title="Квіти" data-description="Дивовижні квіти."></div>
+                
+            </div>
+            
+            
+
+        </div>
+
+        <h1>Unite Gallery - Images</h1>
+        <div id="gallery" style="display: none;">
+            <img alt="Image 1 Title" src="img/luminous-deb-mcpherson.jpg" data-image="img/luminous-deb-mcpherson.jpg" data-description="flowers">
+            <img alt="Image 2 Title" src="img/2018Nature___Flowers_White_tulips_in_rose_drops_129992_.jpg" data-image="img/2018Nature___Flowers_White_tulips_in_rose_drops_129992_.jpg" data-description="flowers">
+            <img alt="Image 3 Title" src="img/1637914177_30-pro-dachnikov-com-p-pion-foto-32.jpg" data-image="img/1637914177_30-pro-dachnikov-com-p-pion-foto-32.jpg" data-description="flowers">
+            <img alt="Image 4 Title" src="img/img1.jpg" data-image="img/img1.jpg" data-description="flowers">
+            <img alt="Image 5 Title" src="img/i-64-37-900x600.jpeg" data-image="img/i-64-37-900x600.jpeg" data-description="flowers">
+        </div>
+
+        <h1>Draggable</h1>
+        <div id="draggable" class="ui-widget-content">
+            <div><img src="img/R.png"></div>
+        </div>
+
+        <h1>Owl Carousel</h1>
+        <div class="owl-carousel owl-theme">				
+            <div class="item"><h4><img src="img/img2.jpg" ></h4></div>
+            <div class="item"><h4><img src="img/img3.jpg" ></h4></div>
+            <div class="item"><h4><img src="img/img4.jpg" ></h4></div>
+            <div class="item"><h4><img src="img/img5.jpg" ></h4></div>
+            <div class="item"><h4><img src="img/img6.jpeg" ></h4></div>
+        </div>
+
+        <h1>Accordion</h1>
+        <div id="accordion">
+            <h3>Троянда</h3>
+            <div>
+                <p>Троянда — це символ кохання, відома своїми ніжними пелюстками і приємним ароматом.</p>
+            </div>
+            <h3>Лілія</h3>
+            <div>
+                <p>Лілія вражає своїми великими квітками та використовується в багатьох культурах як символ чистоти.</p>
+            </div>
+            <h3>Соняшник</h3>
+            <div>
+                <p>Соняшник відомий своєю яскраво-жовтою головкою, що завжди повертається до сонця.</p>
+            </div>
+            <h3>Ромашка</h3>
+            <div>
+                <p>Ромашка зачаровує своєю простотою і часто асоціюється з чистотою та невинністю.</p>
+            </div>
+        </div>
+
+        <script src="js/jquery.js"></script>
+        <script src="js/jquery-ui.js"></script>
+        <script src="js/owl.carousel.js"></script>
+        <script type="text/javascript" src="js/unitegallery.js"></script>
+        <script type="text/javascript" src="themes/default/ug-theme-default.js"></script>
+        <script type="text/javascript" src="themes/video/ug-theme-video.js"></script>
+
+        <script>
+            $(document).ready(function() {
+                // Включаємо datepicker
+                $("#datepicker").datepicker();
+
+                // Ініціалізація draggable
+                $("#draggable").draggable();
+
+                // Ініціалізація аккордеону
+                $("#accordion").accordion({
+                    collapsible: true,
+                    active: false, 
+                    heightStyle: "content" 
+                });
+
+                // Ініціалізація каруселі
+                $('.owl-carousel').owlCarousel({
+                    loop: true,
+                    autoWidth: true,
+                    autoplay: true,
+                    autoplayTimeout: 1000,
+                    margin: 10,
+                    nav: false,
+                    responsive: {
+                        0: {
+                            items: 1
+                        },
+                        600: {
+                            items: 3
+                        },
+                        1000: {
+                            items: 5
+                        }
+                    }
+                });
+
+                // Ініціалізація галереї зображень
+                $("#gallery").unitegallery();
+
+                // Ініціалізація галереї відео
+                $("#gallery-video").unitegallery({
+                    gallery_theme: "video"
+                });
+
+                // Показати відеогалерею
+                $("#gallery-video").show();
+                $("#gallery").show();
+            });
+        </script>
+    </div>
+</body>
+</html>
